@@ -1,0 +1,105 @@
+[
+       {
+           "sf": "XO",
+           "lfs": [
+               {
+                   "lf": "xanthine oxidase",
+                   "freq": 720,
+                   "since": 1976,
+                   "vars": [
+                       {
+                           "lf": "xanthine oxidase",
+                           "freq": 638,
+                           "since": 1976
+                       },
+                       {
+                           "lf": "Xanthine oxidase",
+                           "freq": 69,
+                           "since": 1978
+                       },
+                       {
+                           "lf": "xanthine-oxidase",
+                           "freq": 6,
+                           "since": 1985
+                       },
+                       {
+                           "lf": "Xanthine Oxidase",
+                           "freq": 3,
+                           "since": 1993
+                       },
+                       {
+                           "lf": "Xanthine-Oxidase",
+                           "freq": 2,
+                           "since": 1989
+                       },
+                       {
+                           "lf": "xanthine oxidases",
+                           "freq": 1,
+                           "since": 1979
+                       },
+                       {
+                           "lf": "xanthin oxidase",
+                           "freq": 1,
+                           "since": 1997
+                       }
+                   ]
+               },
+               {
+                   "lf": "xylenol orange",
+                   "freq": 10,
+                   "since": 2004,
+                   "vars": [
+                       {
+                           "lf": "xylenol orange",
+                           "freq": 8,
+                           "since": 2004
+                       },
+                       {
+                           "lf": "xylenol-orange",
+                           "freq": 1,
+                           "since": 2008
+                       },
+                       {
+                           "lf": "Xylenol Orange",
+                           "freq": 1,
+                           "since": 2006
+                       }
+                   ]
+               },
+               {
+                   "lf": "oxidase form",
+                   "freq": 4,
+                   "since": 2000,
+                   "vars": [
+                       {
+                           "lf": "oxidase form",
+                           "freq": 4,
+                           "since": 2000
+                       }
+                   ]
+               },
+               {
+                   "lf": "X organ",
+                   "freq": 3,
+                   "since": 1978,
+                   "vars": [
+                       {
+                           "lf": "X organ",
+                           "freq": 2,
+                           "since": 1978
+                       },
+                       {
+                           "lf": "X-organ",
+                           "freq": 1,
+                           "since": 1993
+                       }
+                   ]
+               }
+           ]
+       }
+   ]
+
+   
+
+
+

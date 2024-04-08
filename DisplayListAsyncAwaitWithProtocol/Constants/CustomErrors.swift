@@ -7,6 +7,8 @@ enum CustomErrors:Error {
     case noStringParameterPassed
     case noURLCreated
     case noArrayOfStrings
+    case noData
+    case cannotDecode
 }
 
 extension CustomErrors:CustomStringConvertible {
@@ -24,6 +26,10 @@ extension CustomErrors:CustomStringConvertible {
             return "Couldn't create a URL"
         case .noArrayOfStrings:
             return "Couldn\'t generate array of strings"
+        case .noData:
+            return "There is no data"
+        case .cannotDecode:
+            return "Error decoding data"
         }
     }
     
