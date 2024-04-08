@@ -1,6 +1,6 @@
 import Foundation
 
-final class NetworkingService {
+final class NetworkingService:  NetworkingServiceProtocol {
     public static var shared = NetworkingService()
     private init() {}
     
@@ -25,3 +25,6 @@ final class NetworkingService {
     }
     
 }
+
+
+

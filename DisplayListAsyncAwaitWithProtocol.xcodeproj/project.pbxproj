@@ -16,6 +16,8 @@
 		09F1FF942BC21B6600BF2DCB /* BuildURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1FF932BC21B6600BF2DCB /* BuildURLConstants.swift */; };
 		09F1FF962BC23E0100BF2DCB /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1FF952BC23E0100BF2DCB /* CustomErrors.swift */; };
 		09F1FF982BC2431600BF2DCB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1FF972BC2431600BF2DCB /* ContentViewModel.swift */; };
+		09F1FF9B2BC25C7300BF2DCB /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1FF9A2BC25C7300BF2DCB /* NetworkingServiceProtocol.swift */; };
+		09F1FF9E2BC25D0100BF2DCB /* MockNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1FF9D2BC25D0100BF2DCB /* MockNetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		09F1FF932BC21B6600BF2DCB /* BuildURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildURLConstants.swift; sourceTree = "<group>"; };
 		09F1FF952BC23E0100BF2DCB /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		09F1FF972BC2431600BF2DCB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		09F1FF9A2BC25C7300BF2DCB /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
+		09F1FF9D2BC25D0100BF2DCB /* MockNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		09F1FF792BC2185100BF2DCB /* DisplayListAsyncAwaitWithProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				09F1FF992BC25C2800BF2DCB /* Protocols */,
 				09F1FF922BC21B4E00BF2DCB /* Constants */,
 				09F1FF8D2BC2193C00BF2DCB /* Models */,
 				09F1FF8C2BC2192700BF2DCB /* Utilities */,
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				09F1FF902BC21B1000BF2DCB /* NetworkingService.swift */,
+				09F1FF9D2BC25D0100BF2DCB /* MockNetworkingService.swift */,
 			);
 			path = NetworkingService;
 			sourceTree = "<group>";
@@ -130,6 +136,14 @@
 				09F1FF952BC23E0100BF2DCB /* CustomErrors.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		09F1FF992BC25C2800BF2DCB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09F1FF9A2BC25C7300BF2DCB /* NetworkingServiceProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,8 @@
 				09F1FF7D2BC2185100BF2DCB /* ContentView.swift in Sources */,
 				09F1FF982BC2431600BF2DCB /* ContentViewModel.swift in Sources */,
 				09F1FF942BC21B6600BF2DCB /* BuildURLConstants.swift in Sources */,
+				09F1FF9E2BC25D0100BF2DCB /* MockNetworkingService.swift in Sources */,
+				09F1FF9B2BC25C7300BF2DCB /* NetworkingServiceProtocol.swift in Sources */,
 				09F1FF7B2BC2185100BF2DCB /* DisplayListAsyncAwaitWithProtocolApp.swift in Sources */,
 				09F1FF912BC21B1000BF2DCB /* NetworkingService.swift in Sources */,
 			);

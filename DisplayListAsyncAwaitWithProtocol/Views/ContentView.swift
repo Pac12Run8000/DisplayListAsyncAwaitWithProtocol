@@ -25,7 +25,6 @@ struct ContentView: View {
             Text(item)
         }
         Spacer()
-        
     }
 }
 
