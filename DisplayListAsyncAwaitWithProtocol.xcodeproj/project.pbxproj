@@ -71,7 +71,6 @@
 				09F1FF992BC25C2800BF2DCB /* Protocols */,
 				09F1FF922BC21B4E00BF2DCB /* Constants */,
 				09F1FF8D2BC2193C00BF2DCB /* Models */,
-				09F1FF8C2BC2192700BF2DCB /* Utilities */,
 				09F1FF8B2BC2191800BF2DCB /* NetworkingService */,
 				09F1FF8A2BC2190C00BF2DCB /* ViewModels */,
 				09F1FF892BC218E800BF2DCB /* Views */,
@@ -114,13 +113,6 @@
 				09F1FF9D2BC25D0100BF2DCB /* MockNetworkingService.swift */,
 			);
 			path = NetworkingService;
-			sourceTree = "<group>";
-		};
-		09F1FF8C2BC2192700BF2DCB /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		09F1FF8D2BC2193C00BF2DCB /* Models */ = {
