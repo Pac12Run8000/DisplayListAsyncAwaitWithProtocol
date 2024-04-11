@@ -12,22 +12,19 @@ final class MockNetworkingServiceTests: XCTestCase {
         sut = nil
     }
 
-    func testRetrieveData() async throws {
-    let url = try XCTUnwrap(URL(string: "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf=Sd"))
-        let wordList = try await sut.retrieveData(url: url)
-        XCTAssertFalse(wordList.isEmpty, "WordList should not be empty")
+    func testRetrieveDataReturnsArray() async throws {
+        let testURL = URL(string: "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf=sd")!
+        do {
+                let result = try await sut.retrieveData(url: testURL)
+                XCTAssertFalse(result.isEmpty, "The result should not be empty")
+                XCTAssertTrue(result.contains("X organ"), "The result should contain 'expectedItem'")
+            } catch {
+                XCTFail("An unexpected error occurred: \(error)")
+            }
     }
     
 
-    func testRetrieveDataNoData() async throws {
-        let invalidURL = try XCTUnwrap(URL(string: "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf="))
-        do {
-            _ = try await self.sut.retrieveData(url: invalidURL)
-            XCTFail("Expected retrieveData to throw, but it did not.")
-        } catch {
     
-        }
-    }
     
 
 }

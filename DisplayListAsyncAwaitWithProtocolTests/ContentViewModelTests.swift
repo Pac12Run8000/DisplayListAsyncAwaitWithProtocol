@@ -16,6 +16,21 @@ final class ContentViewModelTests: XCTestCase {
         mockService = nil
         super.tearDown()
     }
+    
+    
+    
+    func testRetrieveDataForList_NoStringParameter() async {
+        let input = ""
+        do {
+            try await viewModel.retriveDataForList(str: input)
+                XCTFail("Expected retrieveDataForList to throw an error for empty input, but it did not.")
+            } catch let error as CustomErrors {
+                XCTAssertEqual(error, CustomErrors.noURLCreated)
+            } catch {
+                XCTFail("Unexpected error type: \(error)")
+            }
+    }
+
 
     
 

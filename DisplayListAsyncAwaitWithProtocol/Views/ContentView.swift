@@ -17,6 +17,8 @@ struct ContentView: View {
                     try? await viewModel.retriveDataForList(str: inputText)
                 }
             })
+            .autocorrectionDisabled(true)
+            .textInputAutocapitalization(.none)
         }
         .padding()
         .textFieldStyle(RoundedBorderTextFieldStyle())

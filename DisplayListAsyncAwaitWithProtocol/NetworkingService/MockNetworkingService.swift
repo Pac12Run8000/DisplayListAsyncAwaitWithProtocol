@@ -8,13 +8,9 @@ final class MockNetworkingService: NetworkingServiceProtocol {
         if let error = shouldThrowError {
             throw error
         }
-        guard url != URL(string: "http://www.nactem.ac.uk/software/acromine/dictionary.py?sf=") else {
-            throw CustomErrors.badURL
-        }
-        if let wordList = mockWordList {
-            return wordList
-        }
-        guard let url = try Bundle.main.url(forResource: "JsonResponse", withExtension: "geojson"), let data = try Data(contentsOf: url) as? Data else {
+        
+
+        guard let myUrl = try Bundle.main.url(forResource: "JsonResponse", withExtension: "geojson"), let data = try Data(contentsOf: myUrl) as? Data else {
             throw CustomErrors.noData
         }
        
