@@ -1,12 +1,15 @@
 import Foundation
 
 final class MockNetworkingService: NetworkingServiceProtocol {
-    var mockWordList: [String]? = []
+    var mockWordList: [String]? = nil
     var shouldThrowError:CustomErrors?
    
     func retrieveData(url: URL) async throws -> [String] {
         if let error = shouldThrowError {
             throw error
+        }
+        if let wordList = mockWordList {
+            return wordList
         }
         
 

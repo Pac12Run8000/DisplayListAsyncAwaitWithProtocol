@@ -18,7 +18,7 @@ struct ContentView: View {
                 }
             })
             .autocorrectionDisabled(true)
-            .textInputAutocapitalization(.none)
+            .autocapitalization(.none)
         }
         .padding()
         .textFieldStyle(RoundedBorderTextFieldStyle())

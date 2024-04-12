@@ -30,6 +30,27 @@ final class ContentViewModelTests: XCTestCase {
                 XCTFail("Unexpected error type: \(error)")
             }
     }
+    
+    func testRetrieveDataForList_Success() async {
+           do {
+               try await viewModel.retriveDataForList(str: "fr")
+           } catch {
+               XCTFail("Did not expect an error but received \(error)")
+           }
+           XCTAssertEqual(viewModel.wordList, ["xanthine oxidase", "xylenol orange", "oxidase form", "X organ"], "The word list should be updated correctly with the expected words.")
+    }
+    
+    func testRetrieveDataForList_EmptyResults() async {
+        let output = [String]()
+        mockService.mockWordList = output
+        do {
+            try await viewModel.retriveDataForList(str: "yyyyy")
+        } catch {
+            XCTFail("Did not expect an error but received \(error)")
+        }
+        XCTAssertEqual(viewModel.wordList, [])
+    }
+    
 
 
     
