@@ -17,6 +17,7 @@ struct ContentView: View {
                     try? await viewModel.retriveDataForList(str: inputText)
                 }
             })
+            .accessibilityIdentifier("inputTextField")
             .autocorrectionDisabled(true)
             .autocapitalization(.none)
         }
