@@ -1,11 +1,6 @@
-//
-//  DisplayListAsyncAwaitWithProtocolApp.swift
-//  DisplayListAsyncAwaitWithProtocol
-//
-//  Created by Norbert Grover on 4/6/24.
-//
-
 import SwiftUI
+
+// This is environment property injection
 
 @main
 struct DisplayListAsyncAwaitWithProtocolApp: App {
